@@ -141,11 +141,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="DifferentialStep.h" />
+    <ClInclude Include="Gear.h" />
+    <ClInclude Include="Glucose.h" />
+    <ClInclude Include="IInputCell.h" />
+    <ClInclude Include="IOutputCell.h" />
     <ClInclude Include="Org4n1zm.h" />
+    <ClInclude Include="Org4n1zm_win.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="DifferentialStep.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -160,7 +169,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Gear.cpp" />
     <ClCompile Include="Org4n1zm.cpp" />
+    <ClCompile Include="Org4n1zm_win.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
